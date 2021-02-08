@@ -25,7 +25,6 @@ enum PersistenceManager {
         retrieveFavorites { result in
             switch result {
             case .success(var favorites):
-                
                 switch actionType {
                 case .add:
                     guard !favorites.contains(favorite) else {
